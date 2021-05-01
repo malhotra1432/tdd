@@ -32,7 +32,7 @@ class WordCounterTest {
     counter.add("Hello World");
     counter.add("Hello World! I am dead!");
 
-    assertEquals(7, counter.getUniqueWordsCount());
+    assertEquals(5, counter.getUniqueWordsCount());
   }
 
   @Test
@@ -40,7 +40,7 @@ class WordCounterTest {
     counter.add("   Hello     World");
     counter.add("Hello     World! I am     dead!");
 
-    assertEquals(7, counter.getUniqueWordsCount());
+    assertEquals(5, counter.getUniqueWordsCount());
   }
 
   @Test

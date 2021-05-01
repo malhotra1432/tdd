@@ -13,13 +13,13 @@ import static org.mockito.Mockito.*;
 
 class ArticleDistributorTest {
 
+  Channel sports = mock(Channel.class);
+  Channel entertainment = mock(Channel.class);
+  Channel other = mock(Channel.class);
+  ArticleDataAccess articleDataAccess = mock(ArticleDataAccess.class);
+
   @Test
   void shouldReturnArticlesList() {
-
-    Channel sports = mock(Channel.class);
-    Channel entertainment = mock(Channel.class);
-    Channel other = mock(Channel.class);
-    ArticleDataAccess articleDataAccess = mock(ArticleDataAccess.class);
 
     ArticleDistributor articleDistributor =
         new ArticleDistributor(sports, entertainment, other, articleDataAccess);
